@@ -1,0 +1,377 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+*.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Android related
+**/android/**/gradle-wrapper.jar
+**/android/.gradle/
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/.cxx/
+**/android/**/.idea/
+**/android/**/build/
+**/android/**/gradle/
+**/android/**/gradle.properties
+**/android/**/local.properties
+**/android/app/release/
+**/android/key.properties
+**/*.keystore
+**/*.jks
+
+# iOS related
+**/ios/**/.dgph
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/**/.generated/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# FVM related
+.fvm/versions/
+.fvm/flutter_sdk
+
+# Build related
+build/
+**/build/
+
+# IDE specific
+.vscode/
+.idea/
+
+# macOS
+**/macos/**/Pods/
+**/macos/**/xcuserdata/
+**/macos/**/DerivedData/
+**/macos/**/.symlinks/
+**/macos/**/Flutter/Generated.xcconfig
+**/macos/**/Flutter/ephemeral/
+**/macos/**/App.framework
+**/macos/**/Flutter.framework
+
+# Windows
+**/windows/**/x64/
+**/windows/**/Debug/
+**/windows/**/Release/
+**/windows/**/packages/
+**/windows/**/.dart_tool/
+**/windows/**/.packages
+
+# Linux
+**/linux/**/build/
+**/linux/**/.dart_tool/
+**/linux/**/.packages
+
+# Web
+**/web/**/build/
+**/web/**/.dart_tool/
+**/web/**/.packages
+
+# FVM Version Cache
+.fvm/versions/
+
+# Local properties
+android/local.properties
+ios/Flutter/flutter_export_environment.sh
+
+# Project specific
+**/*.apk
+**/*.aab
+**/*.ipa
+**/ios/Runner.app/
+**/android/app/release/
+
+# Cache files
+**/.cache/
+**/.flutter-plugins-dependencies
+**/.flutter-plugins
+
+# Test coverage
+**/coverage/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Lock files (optional - you might want to keep these)
+# pubspec.lock
+# Podfile.lock
+# package-lock.json
+# yarn.lock
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# FVM Configuration
+.fvm/
+
+# Android signing files (security)
+**/*.jks
+**/*.keystore
+**/android/key.properties
+
+# iOS build files
+**/ios/Runner.xcworkspace/
+**/ios/Podfile.lock
+**/ios/Pods/
+
+# Flutter build artifacts
+**/build/
+**/.dart_tool/
+**/.packages
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+
+# IDE files
+*.swp
+*~
+.*.swo
+.*.swp
+.idea/
+.vscode/
+*.iml
+
+# FVM version files
+.fvm/versions/
+.fvm/flutter_sdk
+
+# Local development files
+local.properties
+*.local
+*.log
+
+# Generated files
+**/*.g.dart
+**/*.freezed.dart
+**/*.config.dart
+
+# Test files (optional - keep if you want to include tests)
+# **/*_test.dart
+
+# Coverage
+coverage/
+.lcov
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Node modules (if any)
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Rust
+target/
+**/target/
+
+# Go
+**/vendor/
+**/bin/
+
+# Build outputs
+**/dist/
+**/out/
+**/release/
+**/debug/
+
+# Cache
+.cache/
+.cache-*
+.nyc_output/
+.coverage/
+
+# IDE specific files
+*.swp
+*~
+.*.swo
+.*.swp
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.cproject
+.factorypath
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+
+# Log files
+*.log
+logs/
+*.log.*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Compressed files
+*.zip
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Executables
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDE workspace files
+*.code-workspace
+*.vscode/
+
+# FVM specific
+.fvm/versions/
+.fvm/flutter_sdk
+.fvm/
+
+# Android specific
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+android/**/build/
+android/**/.gradle/
+android/**/local.properties
+
+# iOS specific
+ios/.symlinks/
+ios/Pods/
+ios/build/
+ios/DerivedData/
+ios/Runner.xcworkspace/
+ios/Podfile.lock
+
+# macOS specific
+macos/Pods/
+macos/build/
+macos/DerivedData/
+macos/Runner.xcworkspace/
+macos/Podfile.lock
+
+# Windows specific
+windows/build/
+windows/.dart_tool/
+windows/.packages
+
+# Linux specific
+linux/build/
+linux/.dart_tool/
+linux/.packages
+
+# Web specific
+web/build/
+web/.dart_tool/
+web/.packages
+
+# FVM cache
+.fvm/versions/
+.fvm/flutter_sdk
+
+# Project specific files to exclude
+android/local.properties
+ios/Flutter/flutter_export_environment.sh
+build/
+.fvm/versions/
+**/.flutter-plugins-dependencies
+**/.flutter-plugins
+**/.packages
+**/.dart_tool/
+**/pubspec.lock
+
+# Keep important files
+!pubspec.yaml
+!README.md
+!analysis_options.yaml
+!LICENSE
+!pubspec.lock
+!Podfile.lock
