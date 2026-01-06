@@ -222,6 +222,7 @@ class BLEService {
                 'deviceName': deviceName,
                 'serviceUuids': result.advertisementData.serviceUuids,
                 'manufacturerData': result.advertisementData.manufacturerData,
+                'msd': result.advertisementData.msd,
                 'serviceData': result.advertisementData.serviceData,
                 'txPowerLevel': result.advertisementData.txPowerLevel,
                 'connectable': result.advertisementData.connectable,

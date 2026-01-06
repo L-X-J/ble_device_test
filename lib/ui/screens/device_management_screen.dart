@@ -1,3 +1,4 @@
+import 'package:ble_device_test/utils/hex_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
@@ -109,9 +110,15 @@ class _DeviceManagementScreenState extends State<DeviceManagementScreen> {
         buffer.write('制造商数据:\n');
         advData['manufacturerData'].forEach((id, data) {
           buffer.write(
-            '  ID: 0x${id.toRadixString(16).padLeft(4, '0')}, 数据: ${data.length} 字节\n',
+            '  ID: ${HexUtils.bytesToHex([id]).toUpperCase()}, 数据: ${data.length} 字节\n',
           );
         });
+      }
+      if (advData['msd'] != null && advData['msd'].isNotEmpty) {
+        buffer.write('MSD数据:\n');
+        for (var msd in advData['msd']) {
+          buffer.write('\tMSD: ${HexUtils.bytesToHex(msd).toUpperCase()}\n');
+        }
       }
 
       // 服务数据
@@ -164,7 +171,7 @@ class _DeviceManagementScreenState extends State<DeviceManagementScreen> {
                     color: const Color(0xFF1E1E1E),
                     borderRadius: BorderRadius.circular(4),
                   ),
-                  child: Text(
+                  child: SelectableText(
                     advInfo,
                     style: const TextStyle(
                       color: Colors.greenAccent,
@@ -849,6 +856,12 @@ class _DeviceManagementScreenState extends State<DeviceManagementScreen> {
           ],
         ),
         actions: [
+          // 跳转到关于页面
+          IconButton(
+            icon: const Icon(Icons.info_outline, color: Colors.white),
+            onPressed: () => Navigator.pushNamed(context, '/about'),
+            tooltip: '关于',
+          ),
           // 跳转到快捷指令页面
           IconButton(
             icon: const Icon(Icons.keyboard_command_key, color: Colors.white),

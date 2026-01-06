@@ -5,6 +5,7 @@ import 'ui/theme/app_theme.dart';
 import 'ui/screens/device_management_screen.dart';
 import 'ui/screens/data_transmission_screen.dart';
 import 'ui/screens/commands_screen.dart';
+import 'ui/screens/about_screen.dart';
 
 void main() {
   runApp(const BLEDeviceManagerApp());
@@ -28,6 +29,7 @@ class BLEDeviceManagerApp extends StatelessWidget {
           '/': (context) => const DeviceManagementScreen(),
           '/data_transmission': (context) => const DataTransmissionScreen(),
           '/commands': (context) => const CommandsScreen(),
+          '/about': (context) => const AboutScreen(),
         },
         onGenerateRoute: (settings) {
           // 可以在这里添加更复杂的路由逻辑

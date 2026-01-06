@@ -29,17 +29,15 @@ class HexUtils {
 
   /// 将字节数组转换为HEX字符串
   static String bytesToHex(List<int> bytes, {bool withSpace = true}) {
-    if (bytes.isEmpty) return '';
-
-    StringBuffer hex = StringBuffer();
-    for (int i = 0; i < bytes.length; i++) {
-      if (i > 0 && withSpace) {
-        hex.write(' ');
-      }
-      hex.write(bytes[i].toRadixString(16).padLeft(2, '0').toUpperCase());
+    // 使用 StringBuffer 高效地构建字符串
+    final StringBuffer hexBuffer = StringBuffer();
+    for (final int byte in bytes) {
+      // 将每个字节转换为两位十六进制数
+      // toRadixString(16) 将整数转换为十六进制字符串
+      // padLeft(2, '0') 确保不足两位的补零，例如 10 会变成 "0a" 而不是 "a"
+      hexBuffer.write(byte.toRadixString(16).padLeft(2, '0'));
     }
-
-    return hex.toString();
+    return hexBuffer.toString();
   }
 
   /// 验证HEX字符串格式是否有效
