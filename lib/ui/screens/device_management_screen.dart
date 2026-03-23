@@ -1,9 +1,10 @@
 import 'package:ble_device_test/utils/hex_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
-import '../../providers/ble_provider.dart';
+import 'package:provider/provider.dart';
+
 import '../../models/ble_device.dart';
+import '../../providers/ble_provider.dart';
 import '../widgets/gradient_card.dart';
 
 /// 设备管理界面
@@ -118,6 +119,7 @@ class _DeviceManagementScreenState extends State<DeviceManagementScreen> {
         buffer.write('MSD数据:\n');
         for (var msd in advData['msd']) {
           buffer.write('\tMSD: ${HexUtils.bytesToHex(msd).toUpperCase()}\n');
+          print("MSD: ${HexUtils.bytesToHex(msd).toUpperCase()}");
         }
       }
 

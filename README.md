@@ -1,5 +1,7 @@
 # BLE Device Manager
 
+iOS Test Flight: https://testflight.apple.com/join/H9Tr7QFh
+
 [![Flutter](https://img.shields.io/badge/Flutter-3.38.4-blue.svg)](https://flutter.dev)
 [![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android%20%7C%20Windows%20%7C%20macOS%20%7C%20Linux-green.svg)](https://flutter.dev/docs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -239,12 +241,6 @@ fvm flutter build ios --release
 
 # macOS (需要 macOS)
 fvm flutter build macos --release
-
-# Windows (需要 Windows)
-fvm flutter build windows --release
-
-# Linux (需要 Linux)
-fvm flutter build linux --release
 ```
 
 ### 开发工作流
